@@ -31,5 +31,9 @@ public class HelloController {
         return "API running -" + LocalDate.now().toString();
     }
 
+    @GetMapping("/info")
+    public String info(){ return "First time making this app";
+    }
+
 
 }
